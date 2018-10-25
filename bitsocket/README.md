@@ -1,4 +1,6 @@
-# Bitquery examples for BitDB
+# Bitquery examples for Bitsocket
+
+You can try the examples by going to [bitsocket explorer](https://bitsocket.org/channel) and copy and pasting the example JSON below
 
 ## 1. Basic
 

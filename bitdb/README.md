@@ -1,5 +1,7 @@
 # Bitquery examples for BitDB
 
+You can try the examples by going to [bitdb explorer](https://bitdb.network/v3/explorer) and copy and pasting the example JSON below
+
 ## Basic
 
 ### 1. Query only
