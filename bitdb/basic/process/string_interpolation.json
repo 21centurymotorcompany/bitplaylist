@@ -1,0 +1,11 @@
+{
+  "v": 3,
+  "q": {
+    "find": { "out.h1": "534c5000", "out.s3": "GENESIS" },
+    "limit": 20,
+    "project": { "out.$": 1, "_id": 0 }
+  },
+  "r": {
+    "f": "[.[] | .out[0] | {title: \"[\\(.s4)] \\(.s5)\", document_url: .s6} ]"
+  }
+}

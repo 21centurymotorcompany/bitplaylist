@@ -1,0 +1,15 @@
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "out.e.a": "qq4kp3w3yhhvy4gm4jgeza4vus8vpxgrwc90n8rhxe"
+    },
+    "limit": 1000,
+    "project": {
+      "out.e": 1
+    }
+  },
+  "r": {
+    "f": "[.[] | .out[] | .e  | select(.a and .a != \"qq4kp3w3yhhvy4gm4jgeza4vus8vpxgrwc90n8rhxe\") | . | {addr: .a, value: .v}]"
+  }
+}

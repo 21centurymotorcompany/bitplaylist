@@ -1,0 +1,10 @@
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "$text": { "$search": "hello" },
+      "out.s2": { "$regex": "hello.*", "$options": "i" }
+    },
+    "limit": 10
+  }
+}

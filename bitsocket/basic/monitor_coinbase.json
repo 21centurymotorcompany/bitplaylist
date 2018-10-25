@@ -1,0 +1,14 @@
+{
+  "v": 3,
+  "q": {
+    "db": ["c"],
+    "find": {
+      "in.0": {
+        "$exists": false
+      }
+    }
+  },
+  "r": {
+    "f": ".[] | {winner: .out[0].e.a, prize: \"\\(.out[0].e.v/100000000) BCH\", transactionId: .tx.h, block_height: .blk.i, block_hash: .blk.h}"
+  }
+}

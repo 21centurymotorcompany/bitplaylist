@@ -1,0 +1,5 @@
+{
+  "v": 3,
+  "q": { "find": {} },
+  "r": { "f": ".[] | { id: .tx.h, explorers: [\"https://explorer.bitcoin.com/bch/tx/\\(.tx.h)\", \"https://blockchair.com/bitcoin-cash/transaction/\\(.tx.h)\"] }" }
+}

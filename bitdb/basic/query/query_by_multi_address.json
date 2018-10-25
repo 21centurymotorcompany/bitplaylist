@@ -1,0 +1,10 @@
+{
+  "v": 3,
+  "q": {
+    "find": {
+      "in.e.a": "qq4kp3w3yhhvy4gm4jgeza4vus8vpxgrwc90n8rhxe",
+      "out.e.a": "qpne29ue8chsv9pxv653zxdhjn45umm4esyds75nx6"
+    },
+    "limit": 10
+  }
+}

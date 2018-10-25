@@ -1,0 +1,108 @@
+{
+  "user": {
+    "name": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d01" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, name: .out[1].s2 }]"
+      }
+    },
+    "profile_text": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d05" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, text: .out[1].s2 }]"
+      }
+    },
+    "follow": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d06" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, address: .out[1].s2 }]"
+      }
+    },
+    "unfollow": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d07" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, address: .out[1].s2 }]"
+      }
+    },
+    "profile_picture": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d0a" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, url: .out[1].s2 }]"
+      }
+    }
+  },
+  "memo": {
+    "post": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d02" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, memo: .out[1].s2 }]"
+      }
+    },
+    "reply": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d03" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, target: .out[1].h2, memo: .out[1].s3 }]"
+      }
+    },
+    "like": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d04" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, target: .out[1].s2, tip: .out[0].e.v? }]"
+      }
+    }
+  },
+  "topic": {
+    "post": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d0c" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, topic: .out[1].s2, message: .out[1].s3 }]"
+      }
+    },
+    "follow": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d0d" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, topic: .out[1].s2 }]"
+      }
+    },
+    "unfollow": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d0e" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, topic: .out[1].s2 }]"
+      }
+    }
+  },
+  "poll": {
+    "create": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d10" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, type: .out[1].h2, option_count: .out[1].h3, question: .out[1].s4 }]"
+      }
+    },
+    "add_option": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d13" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, target: .out[1].h2, option: .out[1].s3 }]"
+      }
+    },
+    "vote": {
+      "v": 3,
+      "q": { "find": { "out.h1": "6d14" }, "limit": 50 },
+      "r": {
+        "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, target: .out[1].h2, comment: .out[1].s3 }]"
+      }
+    }
+  }
+}

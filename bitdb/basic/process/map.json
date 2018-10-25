@@ -1,0 +1,10 @@
+{
+  "v": 3,
+  "q": {
+    "db": ["c"],
+    "find": { "out.h1": "6d02" }
+  },
+  "r": {
+    "f": "[ .[] | { block: .blk.i?, timestamp: .blk.t?, content: .out[1]?.s2 }]"
+  }
+}
